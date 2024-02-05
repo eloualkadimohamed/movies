@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import { constant } from 'lodash'
 import Button  from 'react-bootstrap/Button'
 function Hero({movies}) {
     const navigate= useNavigate();
@@ -37,7 +36,7 @@ function Hero({movies}) {
                                 </div>
                                 </Link>
                                 <div>
-                                    <Button variant='info' onClick={()=>reviews(movie.imdbId)}></Button>
+                                    <Button variant='info' onClick={()=>reviews(movie.imdbId)}>add a review</Button>
                                 </div>
                             </div>
                             
